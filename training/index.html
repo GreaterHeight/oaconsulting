@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Programmes — OA Consulting Limited | Professional Development | Lagos, Nigeria</title>
+  <meta name="description" content="Professional training and capacity development programmes for Nigerian organisations — revenue recovery, procurement, M&A, financial management, and leadership. OA Consulting Limited.">
+  <link rel="canonical" href="https://oaconsulting.oagroupng.com/training/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css"><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/animations.css"><link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    .page-hero { background: linear-gradient(160deg, var(--navy) 0%, var(--dark-bg) 100%); padding-top: calc(var(--nav-height) + var(--sp-20)); padding-bottom: var(--sp-20); }
+    .filter-bar { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-bottom: var(--sp-10); }
+    .filter-btn { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.5rem 1.25rem; border: 1px solid var(--grey-200); border-radius: 20px; background: var(--white); color: var(--grey-600); cursor: pointer; transition: all var(--duration-fast); }
+    .filter-btn:hover { border-color: var(--navy); color: var(--navy); }
+    .filter-btn.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+    .training-full-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-6); }
+    .training-full-card { background: var(--white); border: 1px solid var(--grey-100); border-radius: var(--radius-xl); padding: var(--sp-8); display: grid; grid-template-columns: 100px 1fr auto; gap: var(--sp-8); align-items: start; transition: box-shadow var(--duration) var(--ease); }
+    .training-full-card:hover { box-shadow: var(--shadow-md); }
+    .training-full-card[hidden] { display: none; }
+    .training-date-block { background: var(--navy); color: var(--white); border-radius: var(--radius-md); padding: var(--sp-5) var(--sp-4); text-align: center; }
+    .training-date-month { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); line-height: 1; margin-bottom: 4px; }
+    .training-date-day { font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 300; line-height: 1; }
+    .training-date-year { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.08em; color: rgba(255,255,255,0.4); margin-top: 4px; }
+    .training-cat { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: var(--sp-2); }
+    .training-title { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400; color: var(--navy); margin-bottom: var(--sp-3); }
+    .training-meta { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey-400); display: flex; flex-wrap: wrap; gap: var(--sp-4); margin-bottom: var(--sp-3); }
+    .training-desc { font-family: var(--font-body); font-size: var(--text-base); color: var(--grey-600); line-height: 1.7; }
+    .training-cta-col { display: flex; flex-direction: column; gap: var(--sp-3); align-items: flex-end; flex-shrink: 0; }
+    .training-price { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400; color: var(--navy); text-align: right; }
+    .training-price-label { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey-400); text-align: right; margin-top: -var(--sp-1); }
+    .corporate-box { background: var(--off-white); border-radius: var(--radius-xl); padding: var(--sp-10); display: grid; grid-template-columns: 2fr 1fr; gap: var(--sp-10); align-items: center; }
+    .corporate-box__title { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 300; color: var(--navy); margin-bottom: var(--sp-4); }
+    .corporate-box__desc { font-family: var(--font-body); font-size: var(--text-lg); color: var(--grey-600); line-height: 1.7; }
+    @media (max-width: 1024px) { .training-full-card { grid-template-columns: 80px 1fr; } .training-cta-col { grid-column: 1 / -1; align-items: flex-start; } .corporate-box { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .training-full-card { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav nav--scrolled" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo"><span class="nav__logo-name">OA Consulting Limited</span><span class="nav__logo-sub">A Member of OA Group Nigeria</span></a>
+      <div class="nav__links"><a href="/" class="nav__link">Home</a><a href="/services/" class="nav__link">Services</a><a href="/industries/" class="nav__link">Industries</a><a href="/case-studies/" class="nav__link">Case Studies</a><a href="/training/" class="nav__link nav__link--active">Training</a><a href="/contact/" class="nav__link">Contact</a></div>
+      <a href="/contact/" class="nav__cta">Book a Diagnostic</a>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu"><a href="/" class="nav__link">Home</a><a href="/services/" class="nav__link">Services</a><a href="/industries/" class="nav__link">Industries</a><a href="/case-studies/" class="nav__link">Case Studies</a><a href="/training/" class="nav__link">Training</a><a href="/contact/" class="nav__link">Contact</a><a href="/contact/" class="nav__cta">Book a Diagnostic</a></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb"><a href="/">OA Consulting</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Training</span></nav>
+        <h1 style="font-family:var(--font-display);font-weight:300;font-size:clamp(2.5rem,5vw,5rem);color:var(--white);line-height:1.1;max-width:16ch;margin-bottom:var(--sp-6);">Professional development for <em style="color:rgba(255,255,255,0.6);">Nigerian organisations</em></h1>
+        <p style="font-family:var(--font-body);font-size:var(--text-xl);color:rgba(255,255,255,0.6);max-width:55ch;font-weight:300;line-height:1.7;">Open-enrolment and bespoke programmes covering revenue recovery, procurement management, M&A fundamentals, financial management, and leadership — delivered by practicing consultants with direct Nigerian commercial experience.</p>
+      </div>
+    </section>
+
+    <section class="section section--lg">
+      <div class="container">
+        <div class="filter-bar reveal" role="group" aria-label="Filter training by topic">
+          <button class="filter-btn active" data-filter="all">All Programmes</button>
+          <button class="filter-btn" data-filter="revenue">Revenue & Finance</button>
+          <button class="filter-btn" data-filter="procurement">Procurement</button>
+          <button class="filter-btn" data-filter="ma">M&A & Strategy</button>
+          <button class="filter-btn" data-filter="leadership">Leadership</button>
+        </div>
+
+        <div class="training-full-grid" id="trainingGrid">
+          <div class="training-full-card reveal" data-category="revenue">
+            <div class="training-date-block"><div class="training-date-month">[Month]</div><div class="training-date-day">[DD]</div><div class="training-date-year">[YYYY]</div></div>
+            <div>
+              <div class="training-cat">Revenue & Finance</div>
+              <h3 class="training-title">[PROGRAMME NAME — e.g. Revenue Recovery Masterclass for Nigerian Businesses]</h3>
+              <div class="training-meta"><span>[Duration, e.g. 2 Days]</span><span>·</span><span>[Format, e.g. In-Person · Lagos]</span><span>·</span><span>Open Enrolment</span></div>
+              <p class="training-desc">[Programme description — target audience (e.g. CFOs, revenue officers, finance managers), key learning objectives, certification offered. To be supplied by client.]</p>
+            </div>
+            <div class="training-cta-col">
+              <div><div class="training-price">₦[XXX,XXX]</div><div class="training-price-label">Per participant</div></div>
+              <a href="/contact/" class="btn btn-red" style="font-size:10px;padding:0.625rem 1.25rem;">Register Interest</a>
+              <a href="/contact/" class="btn btn-secondary" style="font-size:10px;padding:0.625rem 1.25rem;">Group Rate Enquiry</a>
+            </div>
+          </div>
+
+          <div class="training-full-card reveal" data-category="procurement">
+            <div class="training-date-block"><div class="training-date-month">[Month]</div><div class="training-date-day">[DD]</div><div class="training-date-year">[YYYY]</div></div>
+            <div>
+              <div class="training-cat">Procurement</div>
+              <h3 class="training-title">[PROGRAMME NAME — e.g. Procurement Management for Government Officials]</h3>
+              <div class="training-meta"><span>[Duration]</span><span>·</span><span>[Format · Location]</span><span>·</span><span>Open Enrolment</span></div>
+              <p class="training-desc">[Programme description — BPP compliance, public procurement frameworks, vendor evaluation, tender process management. Target: procurement officers, directors, PSC members. To be supplied by client.]</p>
+            </div>
+            <div class="training-cta-col">
+              <div><div class="training-price">₦[XXX,XXX]</div><div class="training-price-label">Per participant</div></div>
+              <a href="/contact/" class="btn btn-red" style="font-size:10px;padding:0.625rem 1.25rem;">Register Interest</a>
+              <a href="/contact/" class="btn btn-secondary" style="font-size:10px;padding:0.625rem 1.25rem;">Group Rate Enquiry</a>
+            </div>
+          </div>
+
+          <div class="training-full-card reveal" data-category="ma">
+            <div class="training-date-block"><div class="training-date-month">[Month]</div><div class="training-date-day">[DD]</div><div class="training-date-year">[YYYY]</div></div>
+            <div>
+              <div class="training-cat">M&A & Strategy</div>
+              <h3 class="training-title">[PROGRAMME NAME — e.g. M&A Fundamentals for Nigerian Business Executives]</h3>
+              <div class="training-meta"><span>[Duration]</span><span>·</span><span>[Format · Location]</span><span>·</span><span>Open Enrolment</span></div>
+              <p class="training-desc">[Programme description — buy-side and sell-side processes, due diligence fundamentals, valuation approaches, Nigerian regulatory considerations for M&A. Target: business owners, CEOs, board members. To be supplied by client.]</p>
+            </div>
+            <div class="training-cta-col">
+              <div><div class="training-price">₦[XXX,XXX]</div><div class="training-price-label">Per participant</div></div>
+              <a href="/contact/" class="btn btn-red" style="font-size:10px;padding:0.625rem 1.25rem;">Register Interest</a>
+              <a href="/contact/" class="btn btn-secondary" style="font-size:10px;padding:0.625rem 1.25rem;">Group Rate Enquiry</a>
+            </div>
+          </div>
+
+          <div class="training-full-card reveal" data-category="revenue">
+            <div class="training-date-block"><div class="training-date-month">[Month]</div><div class="training-date-day">[DD]</div><div class="training-date-year">[YYYY]</div></div>
+            <div>
+              <div class="training-cat">Revenue & Finance</div>
+              <h3 class="training-title">[PROGRAMME NAME — e.g. Financial Management for Non-Finance Managers]</h3>
+              <div class="training-meta"><span>[Duration]</span><span>·</span><span>[Format · Location]</span><span>·</span><span>Open Enrolment</span></div>
+              <p class="training-desc">[Programme description — reading financial statements, budget management, cost control, financial decision-making for operational managers. To be supplied by client.]</p>
+            </div>
+            <div class="training-cta-col">
+              <div><div class="training-price">₦[XXX,XXX]</div><div class="training-price-label">Per participant</div></div>
+              <a href="/contact/" class="btn btn-red" style="font-size:10px;padding:0.625rem 1.25rem;">Register Interest</a>
+              <a href="/contact/" class="btn btn-secondary" style="font-size:10px;padding:0.625rem 1.25rem;">Group Rate Enquiry</a>
+            </div>
+          </div>
+
+          <div class="training-full-card reveal" data-category="leadership">
+            <div class="training-date-block"><div class="training-date-month">[Month]</div><div class="training-date-day">[DD]</div><div class="training-date-year">[YYYY]</div></div>
+            <div>
+              <div class="training-cat">Leadership</div>
+              <h3 class="training-title">[PROGRAMME NAME — e.g. Strategic Leadership for Nigerian Senior Managers]</h3>
+              <div class="training-meta"><span>[Duration]</span><span>·</span><span>[Format · Location]</span><span>·</span><span>Open Enrolment</span></div>
+              <p class="training-desc">[Programme description — strategic thinking, decision-making under Nigerian market conditions, change management, organisational performance. To be supplied by client.]</p>
+            </div>
+            <div class="training-cta-col">
+              <div><div class="training-price">₦[XXX,XXX]</div><div class="training-price-label">Per participant</div></div>
+              <a href="/contact/" class="btn btn-red" style="font-size:10px;padding:0.625rem 1.25rem;">Register Interest</a>
+              <a href="/contact/" class="btn btn-secondary" style="font-size:10px;padding:0.625rem 1.25rem;">Group Rate Enquiry</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Training -->
+        <div class="corporate-box reveal" style="margin-top:var(--sp-16);">
+          <div>
+            <span class="section-label">Corporate & Institutional Training</span>
+            <h2 class="corporate-box__title">Bespoke programmes for your organisation</h2>
+            <p class="corporate-box__desc">All OA Consulting training programmes are available as bespoke engagements — tailored to your organisation's sector, team, and specific capability gaps. Delivered at your premises or at our Lagos training facilities. Corporate rates available for groups of five or more participants.</p>
+          </div>
+          <div style="text-align:right;">
+            <p style="font-family:var(--font-body);font-size:var(--text-base);color:var(--grey-600);margin-bottom:var(--sp-6);">Contact us to discuss your organisation's training requirements and receive a bespoke programme proposal.</p>
+            <a href="/contact/" class="btn btn-primary">Enquire About Corporate Training</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title reveal">Register for an upcoming programme</h2>
+        <p class="cta-banner__sub reveal reveal--delay-1">Contact us to register interest in any programme or to discuss a bespoke corporate training engagement for your team.</p>
+        <div class="cta-banner__actions reveal reveal--delay-2">
+          <a href="/contact/" class="btn btn-red">Register Training Interest</a>
+          <a href="/contact/" class="btn btn-ghost">Corporate Training Enquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__grid"><div><div class="footer__brand-name">OA Consulting Limited</div><div class="footer__brand-tag">Business Advisory That Delivers Measurable Results</div><p class="footer__desc">Management consulting, revenue recovery, M&A advisory, and capacity development. A member of OA Group Nigeria.</p><a href="https://oagroupng.com" class="footer__group-badge" target="_blank" rel="noopener">A Member of OA Group Nigeria</a><div class="footer__cac">RC: [CAC: RC-XXXXXX]</div></div><div><div class="footer__col-title">Navigation</div><nav class="footer__links"><a href="/" class="footer__link">Home</a><a href="/services/" class="footer__link">Services</a><a href="/industries/" class="footer__link">Industries</a><a href="/case-studies/" class="footer__link">Case Studies</a><a href="/training/" class="footer__link">Training</a><a href="/contact/" class="footer__link">Contact</a></nav></div><div><div class="footer__col-title">OA Group</div><nav class="footer__links"><a href="https://oagroupng.com" class="footer__link" target="_blank" rel="noopener">OA Group Nigeria</a><a href="https://olusola-adekanola.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Olusola Adekanola & Co</a><a href="https://henrisol.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Henrisol Properties</a><a href="https://mol.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Maria Oyinlola Ltd</a><a href="https://pearlprimus.oagroupng.com" class="footer__link" target="_blank" rel="noopener">Pearl Primus</a></nav></div><div><div class="footer__col-title">Contact</div><address style="font-style:normal;"><p class="footer__contact-item">4, Aderoju Adewuyi Street, Opebi-Ikeja, Lagos</p><p class="footer__contact-item"><a href="tel:+2348061650349" class="footer__link">+234 806 165 0349</a></p></address><div class="footer__socials"><a href="https://linkedin.com/company/oagroupng" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">in</a><a href="https://x.com/oagroupng" class="footer__social" aria-label="X" target="_blank" rel="noopener">𝕏</a><a href="https://instagram.com/oagroupng" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">ig</a><a href="https://facebook.com/oagroupng" class="footer__social" aria-label="Facebook" target="_blank" rel="noopener">fb</a></div></div></div><div class="footer__bottom"><p class="footer__copy">© 2025 OA Consulting Limited. All rights reserved.</p><nav class="footer__legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a></nav><p class="footer__dev">Designed & developed by GreaterHeight Technologies</p></div></div></footer>
+  <button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--navy);border:1px solid rgba(255,255,255,0.15);color:var(--white);font-size:18px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:500;cursor:pointer;">↑</button>
+  <div class="cookie-banner" id="cookieBanner"><p class="cookie-banner__text">We use cookies. See our <a href="/privacy/" style="color:var(--white);text-decoration:underline;">Privacy Policy</a>.</p><div class="cookie-banner__actions"><button id="cookieAccept" class="btn btn-red" style="padding:0.5rem 1.25rem;font-size:11px;">Accept</button><button id="cookieDecline" class="btn btn-ghost" style="padding:0.5rem 1.25rem;font-size:11px;border-color:rgba(255,255,255,0.3);">Decline</button></div></div>
+  <script src="/js/navigation.js" defer></script><script src="/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.training-full-card');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          cards.forEach(card => { card.toggleAttribute('hidden', filter !== 'all' && card.dataset.category !== filter); });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ============================================================
+   OA CONSULTING LIMITED — CSS VARIABLES
+   Brand: Deep Navy #00145A | Authority Red #F50000 | Black #000000
+   Same palette as OA & Co but distinct visual expression:
+   warmer, more dynamic, less institutional — a consulting firm
+   that solves problems rather than certifies them.
+   ============================================================ */
+
+:root {
+  /* ── Brand Colours ── */
+  --navy:        #00145A;
+  --navy-90:     #001470;
+  --navy-mid:    #0a1f6e;
+  --navy-light:  #1a3080;
+  --red:         #F50000;
+  --red-dark:    #c00000;
+  --red-muted:   rgba(245, 0, 0, 0.07);
+  --black:       #000000;
+  --off-black:   #0E1420;
+
+  /* ── Group Ecosystem Colours ── */
+  --group-blue:  #5C6C94;
+  --group-light: #AAB4C8;
+
+  /* ── Neutral Palette ── */
+  --white:       #FFFFFF;
+  --off-white:   #F6F7FA;
+  --grey-50:     #F0F1F5;
+  --grey-100:    #E2E4EB;
+  --grey-200:    #C8CBDB;
+  --grey-400:    #8890A8;
+  --grey-600:    #555D78;
+  --grey-800:    #252B3F;
+
+  /* ── Dark Section (slightly warmer than OA & Co) ── */
+  --dark-bg:     #070F2A;
+  --dark-bg-2:   #0c1535;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-label:   'Cinzel', 'Times New Roman', serif;
+  --font-body:    'Crimson Pro', Georgia, serif;
+
+  /* ── Type Scale ── */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1.0625rem;
+  --text-lg:    1.125rem;
+  --text-xl:    1.25rem;
+  --text-2xl:   1.5rem;
+  --text-3xl:   2rem;
+  --text-4xl:   2.75rem;
+  --text-5xl:   3.75rem;
+  --text-6xl:   5rem;
+  --text-7xl:   6.5rem;
+
+  /* ── Spacing ── */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* ── Layout ── */
+  --max-width:     1280px;
+  --content-width: 900px;
+  --gutter:        clamp(1.25rem, 5vw, 3rem);
+
+  /* ── Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0,20,90,0.08);
+  --shadow-md: 0 4px 20px rgba(0,20,90,0.10);
+  --shadow-lg: 0 12px 48px rgba(0,20,90,0.14);
+
+  /* ── Transitions ── */
+  --ease:          cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --duration-fast: 150ms;
+  --duration:      260ms;
+  --duration-slow: 450ms;
+
+  /* ── Nav ── */
+  --nav-height: 72px;
+}

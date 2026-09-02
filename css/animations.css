@@ -1,0 +1,54 @@
+/* ============================================================
+   OLUSOLA ADEKANOLA & CO — ANIMATIONS
+   ============================================================ */
+
+/* ── Reveal on Scroll ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal--delay-1 { transition-delay: 0.1s; }
+.reveal--delay-2 { transition-delay: 0.2s; }
+.reveal--delay-3 { transition-delay: 0.3s; }
+.reveal--delay-4 { transition-delay: 0.4s; }
+.reveal--delay-5 { transition-delay: 0.5s; }
+.reveal--left {
+  transform: translateX(-24px);
+  opacity: 0;
+}
+.reveal--left.visible { transform: translateX(0); opacity: 1; }
+
+/* ── Hero Enter ── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero__since   { animation: heroFadeUp 0.8s var(--ease) 0.2s both; }
+.hero__headline { animation: heroFadeUp 0.9s var(--ease) 0.35s both; }
+.hero__divider  { animation: heroFadeUp 0.7s var(--ease) 0.5s both; }
+.hero__sub      { animation: heroFadeUp 0.8s var(--ease) 0.55s both; }
+.hero__actions  { animation: heroFadeUp 0.7s var(--ease) 0.7s both; }
+.hero__stats    { animation: heroFadeUp 0.7s var(--ease) 0.85s both; }
+
+/* ── Vertical rule pulse ── */
+@keyframes rulePulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.8; }
+}
+.hero__rule { animation: rulePulse 4s ease-in-out infinite; }
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .hero__since, .hero__headline, .hero__divider,
+  .hero__sub, .hero__actions, .hero__stats, .hero__rule {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — OA Consulting Limited</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css"><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    .notfound{min-height:100vh;background:linear-gradient(160deg,var(--navy) 0%,var(--dark-bg) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:var(--sp-8) var(--gutter);text-align:center;}
+    .notfound__num{font-family:var(--font-display);font-size:clamp(6rem,20vw,14rem);font-weight:300;color:rgba(255,255,255,0.06);line-height:1;margin-bottom:var(--sp-4);}
+    .notfound__title{font-family:var(--font-display);font-size:clamp(var(--text-3xl),4vw,var(--text-5xl));font-weight:300;color:var(--white);margin-bottom:var(--sp-4);}
+    .notfound__sub{font-family:var(--font-body);font-size:var(--text-xl);color:rgba(255,255,255,0.55);max-width:44ch;margin:0 auto var(--sp-10);font-weight:300;line-height:1.7;}
+    .notfound__search{display:flex;gap:var(--sp-3);max-width:480px;margin:0 auto var(--sp-10);}
+    .notfound__search input{flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius-sm);padding:0.875rem 1rem;font-family:var(--font-body);font-size:var(--text-base);color:var(--white);}
+    .notfound__search input::placeholder{color:rgba(255,255,255,0.35);}
+    .notfound__search input:focus{outline:none;border-color:var(--red);}
+    .notfound__links{display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:center;}
+    .notfound__link{font-family:var(--font-label);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius-sm);padding:0.625rem 1.25rem;transition:all 0.2s;}
+    .notfound__link:hover{color:var(--white);border-color:rgba(255,255,255,0.4);}
+  </style>
+</head>
+<body style="background:var(--dark-bg);">
+  <main>
+    <section class="notfound" aria-label="Page not found">
+      <div class="notfound__num" aria-hidden="true">404</div>
+      <h1 class="notfound__title">This page has moved — or never existed</h1>
+      <p class="notfound__sub">The page you are looking for is not here. It may have been moved, removed, or the address entered incorrectly.</p>
+      <div class="notfound__search">
+        <input type="search" placeholder="Search the site..." aria-label="Search">
+        <a href="/" class="btn btn-red" style="flex-shrink:0;">Home</a>
+      </div>
+      <div class="notfound__links">
+        <a href="/services/" class="notfound__link">Services</a>
+        <a href="/industries/" class="notfound__link">Industries</a>
+        <a href="/case-studies/" class="notfound__link">Case Studies</a>
+        <a href="/training/" class="notfound__link">Training</a>
+        <a href="/contact/" class="notfound__link">Contact</a>
+      </div>
+      <p style="font-family:var(--font-body);font-size:var(--text-sm);color:rgba(255,255,255,0.25);margin-top:var(--sp-12);">OA Consulting Limited · <a href="https://oagroupng.com" style="color:rgba(255,255,255,0.25);">A Member of OA Group Nigeria</a></p>
+    </section>
+  </main>
+</body>
+</html>
